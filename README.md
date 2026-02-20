@@ -1,4 +1,4 @@
-# FlaskAuthApp - Employee Registration System
+# FlaskAuthApp 
 
 A Flask-based authentication system with proper server-side validation for employee registration and login.
 

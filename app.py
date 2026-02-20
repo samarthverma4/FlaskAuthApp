@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, session
 from flask_sqlalchemy import SQLAlchemy
-from werkzeug.security import generate_password_hash, check_password_hash
 import os
 
 app = Flask(__name__)
@@ -67,8 +66,7 @@ def register():
         
         # All validations passed - create new user
         try:
-            hashed_password = generate_password_hash(password, method='pbkdf2:sha256')
-            new_user = User(name=name, email=email, password=hashed_password)
+            new_user = User(name=name, email=email, password=password)
             db.session.add(new_user)
             db.session.commit()
             
@@ -95,7 +93,7 @@ def login():
         # Check if user exists
         user = User.query.filter_by(email=email).first()
         
-        if user and check_password_hash(user.password, password):
+        if user and user.password == password:
             session['user_id'] = user.id
             session['user_name'] = user.name
             session['user_email'] = user.email

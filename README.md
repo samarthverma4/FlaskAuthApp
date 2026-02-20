@@ -8,7 +8,6 @@ A Flask-based authentication system with proper server-side validation for emplo
 - Name validation (required)
 - Email validation (required and unique)
 - Password validation (required, minimum 6 characters)
-- Password hashing using Werkzeug
 
 ✅ **User Login System**
 - Email and password authentication
@@ -104,7 +103,6 @@ Assignment/
 - **Flask** - Python web framework
 - **Flask-SQLAlchemy** - Database ORM
 - **SQLite** - Database
-- **Werkzeug** - Password hashing
 - **Bootstrap 5** - Frontend styling
 - **Gunicorn** - Production WSGI server
 
@@ -137,7 +135,6 @@ The application displays user-friendly error messages for:
 
 ## Security Features
 
-- ✅ Password hashing with `pbkdf2:sha256`
 - ✅ Session-based authentication
 - ✅ SQL injection prevention (SQLAlchemy ORM)
 - ✅ CSRF protection (Flask built-in)

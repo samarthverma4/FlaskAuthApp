@@ -84,6 +84,7 @@ Assignment/
 │
 ├── app.py                 # Main Flask application
 ├── requirements.txt       # Python dependencies
+├── Procfile              # Deployment configuration
 ├── README.md             # Project documentation
 │
 ├── templates/            # HTML templates
@@ -103,6 +104,7 @@ Assignment/
 - **Flask-SQLAlchemy** - Database ORM
 - **SQLite** - Database
 - **Bootstrap 5** - Frontend styling
+- **Gunicorn** - Production WSGI server
 
 ## Validation Rules
 
@@ -167,3 +169,4 @@ This project is created for educational purposes.
 - ✅ Error messages displayed properly
 - ✅ Code pushed to GitHub (public repository)
 - ✅ README.md updated
+- ✅ Ready for Render deployment

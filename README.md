@@ -188,7 +188,7 @@ The application displays user-friendly error messages for:
 
 ## Author
 
-Your Name
+Samarth Verma
 
 ## License
 

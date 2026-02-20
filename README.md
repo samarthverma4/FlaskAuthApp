@@ -78,35 +78,6 @@ python app.py
 ```
 http://127.0.0.1:5000
 ```
-
-## Deployment on Render
-
-### Steps to Deploy:
-
-1. **Push code to GitHub**:
-```bash
-git init
-git add .
-git commit -m "Initial commit: FlaskAuthApp with validation"
-git branch -M main
-git remote add origin <your-github-repo-url>
-git push -u origin main
-```
-
-2. **Deploy on Render**:
-   - Go to [Render Dashboard](https://dashboard.render.com/)
-   - Click "New" → "Web Service"
-   - Connect your GitHub repository
-   - Configure settings:
-     - **Name**: flaskauthapp (or your preferred name)
-     - **Environment**: Python 3
-     - **Build Command**: `pip install -r requirements.txt`
-     - **Start Command**: `gunicorn app:app`
-   - Click "Create Web Service"
-
-3. **Access your deployed app**:
-   - Render will provide a URL like: `https://flaskauthapp-xxxx.onrender.com`
-
 ## Project Structure
 
 ```
